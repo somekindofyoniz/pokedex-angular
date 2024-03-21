@@ -4,12 +4,12 @@
         <div id="circulo">
 
         </div>
-        <img src="../../../assets/img/char.png">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{id}}.png">
         <span>
-            NO. 001
+            No. {{id}}
         </span>
-        <span>
-            Charmander
+        <span *ngIf="data">
+            {{data.name | titlecase}}
         </span>
     </div>
 </div>
